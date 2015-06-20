@@ -9,7 +9,7 @@ This repository contains dockerfiles and instructions for Rocket.Chat deployment
 * Google Computing Platform
 * Generic Linux
 * Core OS
-* Metoer Galaxy
+* Meteor Galaxy
 * Salesforce's Heroku
 * Nitrous.io
 * Digital Ocean
