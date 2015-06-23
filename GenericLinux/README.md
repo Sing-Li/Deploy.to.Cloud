@@ -1,6 +1,6 @@
-# Rocker.Chat
+# Rocket.Chat
 
-Deploy [Roket.Chat](https://github.com/RocketChat/Rocket.Chat) to Linux (RedHat, Centos, Debian, Ubuntu, and so on).
+Deploy [Rocket.Chat](https://github.com/RocketChat/Rocket.Chat) to Linux (RedHat, Centos, Debian, Ubuntu, and so on).
 
 ## Prerequisite
 

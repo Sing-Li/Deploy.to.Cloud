@@ -1,4 +1,4 @@
-# Rocket.Chat Deployment in the Cloud and Linux Packages
+# Cloud Deployment and Linux Packages
 
 Rocket.Chat aims to be cloud deployable, in a performant and scalable way, across all global cloud service providers.  
 
