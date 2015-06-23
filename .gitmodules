@@ -1,0 +1,3 @@
+[submodule "GenericLinux/app"]
+	path = GenericLinux/app
+	url = https://github.com/RocketChat/Rocket.Chat
