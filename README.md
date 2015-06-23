@@ -1,6 +1,8 @@
-# Rocket.Chat Deployment in the Cloud (dockerfiles)
+# Rocket.Chat Deployment in the Cloud and Linux Packages
 
-Rocket.Chat aims to be cloud deployable, in a performant and scalable way, across all global cloud providers.  
+Rocket.Chat aims to be cloud deployable, in a performant and scalable way, across all global cloud service providers.  
+
+In addition, Rocket.Chat is package-ready for Linux package builders and maintainers.
 
 This repository contains dockerfiles and instructions for Rocket.Chat deployment and configuration on:
 
@@ -16,3 +18,5 @@ This repository contains dockerfiles and instructions for Rocket.Chat deployment
 * Rackspace 
 
 The list is highly America-centric.  Global contributors - please submit PRs!
+
+systemd support for Linux package builders is available under the systemd directory.
