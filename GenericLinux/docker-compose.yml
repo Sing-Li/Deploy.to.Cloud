@@ -5,7 +5,7 @@ db:
     - data/dump:/dump
   command: mongod --smallfiles
 web:
-  image: rocketchat/generic_linux 
+  image: rocketchat/rocket.chat 
   environment:
     - MONGO_URL=mongodb://db:27017/meteor
     - ROOT_URL=https://rocketchat.test
