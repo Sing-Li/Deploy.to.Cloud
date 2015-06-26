@@ -1,6 +1,8 @@
 # Deploying Rocket.Chat to Salesforce's Heroku
 
-Heroku is a CloudFoundry based provider.  Two ways to deploy Rocket.Chat to Heroku:
+Heroku is a CloudFoundry based provider.  
+
+Two ways to deploy Rocket.Chat to Heroku:
 
 * easy one click
 * customized command line
@@ -15,7 +17,9 @@ Try clicking the button below, and either login or create a new account, then fo
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/RocketChat/Rocket.Chat/tree/master)
 
-If everything goes well, you will have your own instance of Rocket.Chat running.  If not, please raise an issue.
+If everything goes well, you will have your own instance of Rocket.Chat running.  
+
+If not, please raise an issue.
 
 ## Customized command line for developers
 
@@ -26,7 +30,7 @@ First make sure you have the following installed:
 * git 
 * Heroku CLI
 
-First checkout the latest version of Rocket.Chat:
+Next, checkout the latest version of Rocket.Chat:
 
 ~~~
 git clone https://github.com/RocketChat/Rocket.Chat
@@ -52,10 +56,12 @@ heroku config:add ROOT_URL=https://<your app name>.herokuapp.com/
 
 If your app failed to start, check and make sure you have ROOT_URL set.
 
-Heroku app deployment is triggered by git commits - to Heroku's repos, and not github.   You are almost ready to deploy and stage your own instance.  But you must first wire up the git repos to heroku.
+Heroku app deployment is triggered by git commits - to Heroku's repos, and not github.   
+
+You are almost ready to deploy and stage your own instance.  But you must first wire up the git repos to heroku.
 
 ~~~
-git  git remote add heroku https://git.heroku.com/<your app name>.git
+git remote add heroku https://git.heroku.com/<your app name>.git
 ~~~
 
 Finally, deploy and stage your app by:
@@ -71,4 +77,4 @@ Rocket.Chat should now be running.  If you encounter problems, please raise an i
 * To add any service to an app, even if it is free, you will need to register a valid credit card with Heroku.   Rocket.Chat needs both mongolab and logenteries services.
 * Heroku (actually CloudFoundry) uses custom buildpacks to stage applications.  The buildpack used by Rocket.Chat can take a very long time to build - since it needs to download Meteor and build the server image every time.
 * You *must*  set the ROOT_URL environment variable, as shown above, otherwise the server side will crash.
-* Note mongolab's free sandbox plan does not support oplog tailing - check other plans
+* Note mongolab's free sandbox plan does not support oplog tailing - check other plans if you need oplog.
