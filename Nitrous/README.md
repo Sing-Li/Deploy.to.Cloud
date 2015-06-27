@@ -9,7 +9,7 @@ Deploying to nitrous.io is extremely easy, because it supports 'boxes' with Mete
 Create a box, and select Meteor.  512 MB is fine, but you need at least 2 GB of storage to start Rocket.Chat.  Make sure that you enter   `https://github.com/RocketChat/Rocket.Chat`  in the *Download a Github repo* field.
 
 
-
+![Create a Rocket.Chat Meteor box](https://raw.githubusercontent.com/Sing-Li/bbug/master/images/nitrousio.png)
 
 
 Then just hit the `Create Box` button to create the box.
