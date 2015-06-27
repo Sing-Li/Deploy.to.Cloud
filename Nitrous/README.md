@@ -22,7 +22,13 @@ The box will be created and you will be at the console. First, change directory 
 cd workspace/Rocket.Chat
 ~~~
 
-Now, remove the android platform to save some space. This can take a long time on most free or low cost boxes.
+Now, remove the git repository to save 12 MB.
+
+~~~
+rm -rf .git
+~~~
+
+Next, remove the android platform to save some more space. This platform removal can take a long time on most free or low cost boxes.
 
 ~~~
 meteor remove-platform android
