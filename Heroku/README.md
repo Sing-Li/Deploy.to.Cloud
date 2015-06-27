@@ -78,3 +78,4 @@ Rocket.Chat should now be running.  If you encounter problems, please raise an i
 * Heroku (actually CloudFoundry) uses custom buildpacks to stage applications.  The buildpack used by Rocket.Chat can take a very long time to build - since it needs to download Meteor and build the server image every time.
 * You *must*  set the ROOT_URL environment variable, as shown above, otherwise the server side will crash.
 * Note mongolab's free sandbox plan does not support oplog tailing - check other plans if you need oplog.
+* If you are scaling to multi-dynos on Heroku, and you have clients/customers still using older browsers that do not support WebSocket, you need to be mindful of sticky session support (BETA) on Heroku - see [sticky sessions on Heroku](https://devcenter.heroku.com/articles/session-affinity).
