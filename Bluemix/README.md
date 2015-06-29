@@ -70,4 +70,4 @@ All that is left to do now is to push Rocket.Chat to the app you created early i
 cf push <your app name> -m 512M -b https://github.com/ind1go/bluemix-buildpack-meteor.git
 ~~~
 
-That's it.  Everybody on the Internet can now access your instance of Rocket.Chat at https://<your app name>.mybluemix.net/.
+That's it.  Everybody on the Internet can now access your instance of Rocket.Chat at `https://<your app name>.mybluemix.net/`.
