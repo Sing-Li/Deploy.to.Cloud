@@ -1,12 +1,22 @@
 ## Official docker hub image work-in-progress
 
 
-`Dockerfile` is the final image builder, currently under revision.
-*  the COPY in this file will replaced by curl over https once our post-release build workflow is in place
+`Dockerfile` is the final image builder, currently under minor revision.
 
-`maketar.sh` will become our build workflow after a release, creating a deployable .tgz file - downloadable behind an https server.
+`maketar.sh` will become our build workflow (part of CI) after a release, creating a deployable `.tgz` file - downloadable behind an https server. 
 
-* this script will generate a checksum in checksum.dat
-* for now, the Dockerfile needs to be manually updated to contain the checksum - this is acceptable for review; but we can also use a third-party public key based escrow and gpg fingerprints for better implementation
+* this script will generate a detached signature file with extension `.asc`.  This file must be moved to the same directory as the `.tgz` file.
 
-`version 0.5.1` is just a place-holder version tag :  until our post-release build workflow is in place.
+`version 0.5.1` is just a place-holder version tag :  until CI workflow is in place.
+
+###NOTE
+
+This Docker file is complete and tested with:
+
+* HTTPS download with gpg signature verification via fingerprinted public key retrieved from key server
+
+This is the highest security level 'preferred' by the offical image review.  We are now just pending:
+
+* CI build process, pushing tagged release `.tgz` to CDN served over HTTPS
+* a  buildmaster@rocket.chat identity + email account (to replace sli@makawave.com), gpg key generation, and key publication on public server
+
