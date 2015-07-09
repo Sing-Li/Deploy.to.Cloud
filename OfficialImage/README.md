@@ -7,16 +7,16 @@
 
 * this script will generate a detached signature file with extension `.asc`.  This file must be moved to the same directory as the `.tgz` file.
 
-`version 0.5.1` is just a place-holder version tag :  until CI workflow is in place.
+`version v0.4.0` is just a place-holder version tag :  until CI workflow is in place.
 
 ###NOTE
 
 This Docker file is complete and tested with:
 
 * HTTPS download with gpg signature verification via fingerprinted public key retrieved from key server
+* a  buildmaster@rocket.chat identity + email account (to replace sli@makawave.com), gpg key generation, and key publication on public server
 
 This is the highest security level 'preferred' by the offical image review.  We are now just pending:
 
 * CI build process, pushing tagged release `.tgz` to CDN served over HTTPS
-* a  buildmaster@rocket.chat identity + email account (to replace sli@makawave.com), gpg key generation, and key publication on public server
 
